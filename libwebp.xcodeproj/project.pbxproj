@@ -47,11 +47,9 @@
 		804BDFBB21356BDB00BA3395 /* muxinternal.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFB521356BDB00BA3395 /* muxinternal.c */; };
 		804BDFBC21356BDB00BA3395 /* anim_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFB621356BDB00BA3395 /* anim_encode.c */; };
 		804BDFBD21356BDB00BA3395 /* muxread.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFB721356BDB00BA3395 /* muxread.c */; };
-		804BDFDC21356BEC00BA3395 /* delta_palettization_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDFBE21356BEA00BA3395 /* delta_palettization_enc.h */; };
 		804BDFDD21356BEC00BA3395 /* config_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFBF21356BEA00BA3395 /* config_enc.c */; };
 		804BDFDE21356BEC00BA3395 /* picture_psnr_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFC021356BEA00BA3395 /* picture_psnr_enc.c */; };
 		804BDFDF21356BEC00BA3395 /* backward_references_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFC121356BEA00BA3395 /* backward_references_enc.c */; };
-		804BDFE021356BEC00BA3395 /* delta_palettization_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFC221356BEA00BA3395 /* delta_palettization_enc.c */; };
 		804BDFE121356BEC00BA3395 /* filter_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFC321356BEA00BA3395 /* filter_enc.c */; };
 		804BDFE221356BEC00BA3395 /* vp8i_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDFC421356BEA00BA3395 /* vp8i_enc.h */; };
 		804BDFE321356BEC00BA3395 /* vp8l_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BDFC521356BEA00BA3395 /* vp8l_enc.c */; };
@@ -166,6 +164,9 @@
 		804BE0A721356C2600BA3395 /* io_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE09721356C2600BA3395 /* io_dec.c */; };
 		80C1D52D213570EC007974F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1D52C213570EC007974F5 /* main.m */; };
 		80C1D53421357117007974F5 /* libwebp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804BDE04213568F500BA3395 /* libwebp.framework */; };
+		80C1D53B2135871B007974F5 /* upsampling_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = 80C1D5382135871B007974F5 /* upsampling_sse41.c */; };
+		80C1D53C2135871B007974F5 /* yuv_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = 80C1D5392135871B007974F5 /* yuv_sse41.c */; };
+		80C1D53D2135871B007974F5 /* common_sse41.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C1D53A2135871B007974F5 /* common_sse41.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,11 +222,9 @@
 		804BDFB521356BDB00BA3395 /* muxinternal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = muxinternal.c; sourceTree = "<group>"; };
 		804BDFB621356BDB00BA3395 /* anim_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anim_encode.c; sourceTree = "<group>"; };
 		804BDFB721356BDB00BA3395 /* muxread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = muxread.c; sourceTree = "<group>"; };
-		804BDFBE21356BEA00BA3395 /* delta_palettization_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delta_palettization_enc.h; sourceTree = "<group>"; };
 		804BDFBF21356BEA00BA3395 /* config_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config_enc.c; sourceTree = "<group>"; };
 		804BDFC021356BEA00BA3395 /* picture_psnr_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture_psnr_enc.c; sourceTree = "<group>"; };
 		804BDFC121356BEA00BA3395 /* backward_references_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = backward_references_enc.c; sourceTree = "<group>"; };
-		804BDFC221356BEA00BA3395 /* delta_palettization_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = delta_palettization_enc.c; sourceTree = "<group>"; };
 		804BDFC321356BEA00BA3395 /* filter_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter_enc.c; sourceTree = "<group>"; };
 		804BDFC421356BEA00BA3395 /* vp8i_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8i_enc.h; sourceTree = "<group>"; };
 		804BDFC521356BEA00BA3395 /* vp8l_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vp8l_enc.c; sourceTree = "<group>"; };
@@ -341,6 +340,9 @@
 		80C1D52A213570EC007974F5 /* libwebpExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libwebpExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1D52C213570EC007974F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80C1D53721357BA7007974F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		80C1D5382135871B007974F5 /* upsampling_sse41.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upsampling_sse41.c; sourceTree = "<group>"; };
+		80C1D5392135871B007974F5 /* yuv_sse41.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv_sse41.c; sourceTree = "<group>"; };
+		80C1D53A2135871B007974F5 /* common_sse41.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_sse41.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,8 +487,6 @@
 				804BDFBF21356BEA00BA3395 /* config_enc.c */,
 				804BDFC721356BEB00BA3395 /* cost_enc.c */,
 				804BDFD021356BEB00BA3395 /* cost_enc.h */,
-				804BDFC221356BEA00BA3395 /* delta_palettization_enc.c */,
-				804BDFBE21356BEA00BA3395 /* delta_palettization_enc.h */,
 				804BDFC321356BEA00BA3395 /* filter_enc.c */,
 				804BDFD621356BEB00BA3395 /* frame_enc.c */,
 				804BDFC821356BEB00BA3395 /* histogram_enc.c */,
@@ -552,6 +552,7 @@
 				804BE01B21356C0600BA3395 /* alpha_processing_sse41.c */,
 				804BE00421356C0500BA3395 /* alpha_processing.c */,
 				804BE03A21356C0900BA3395 /* common_sse2.h */,
+				80C1D53A2135871B007974F5 /* common_sse41.h */,
 				804BE00E21356C0500BA3395 /* cost_mips_dsp_r2.c */,
 				804BE02421356C0700BA3395 /* cost_mips32.c */,
 				804BE01421356C0600BA3395 /* cost_sse2.c */,
@@ -608,11 +609,13 @@
 				804BE03421356C0900BA3395 /* upsampling_msa.c */,
 				804BE00921356C0500BA3395 /* upsampling_neon.c */,
 				804BE03D21356C0900BA3395 /* upsampling_sse2.c */,
+				80C1D5382135871B007974F5 /* upsampling_sse41.c */,
 				804BE03021356C0800BA3395 /* upsampling.c */,
 				804BE02B21356C0800BA3395 /* yuv_mips_dsp_r2.c */,
 				804BE01221356C0600BA3395 /* yuv_mips32.c */,
 				804BE03621356C0900BA3395 /* yuv_neon.c */,
 				804BE02821356C0800BA3395 /* yuv_sse2.c */,
+				80C1D5392135871B007974F5 /* yuv_sse41.c */,
 				804BE00F21356C0500BA3395 /* yuv.c */,
 				804BE02321356C0700BA3395 /* yuv.h */,
 			);
@@ -641,6 +644,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C1D53D2135871B007974F5 /* common_sse41.h in Headers */,
 				804BDE09213568F500BA3395 /* libwebp.h in Headers */,
 				804BDF9321356BC100BA3395 /* color_cache_utils.h in Headers */,
 				804BE0A121356C2600BA3395 /* vp8i_dec.h in Headers */,
@@ -666,7 +670,6 @@
 				804BDFEE21356BEC00BA3395 /* cost_enc.h in Headers */,
 				804BDFBA21356BDB00BA3395 /* muxi.h in Headers */,
 				804BDFA321356BC100BA3395 /* quant_levels_dec_utils.h in Headers */,
-				804BDFDC21356BEC00BA3395 /* delta_palettization_enc.h in Headers */,
 				804BDFED21356BEC00BA3395 /* backward_references_enc.h in Headers */,
 				804BDF9C21356BC100BA3395 /* quant_levels_utils.h in Headers */,
 				804BE04A21356C0A00BA3395 /* neon.h in Headers */,
@@ -835,7 +838,6 @@
 				804BE09A21356C2600BA3395 /* alpha_dec.c in Sources */,
 				804BE04821356C0A00BA3395 /* dec_neon.c in Sources */,
 				804BE05321356C0A00BA3395 /* cost_mips_dsp_r2.c in Sources */,
-				804BDFE021356BEC00BA3395 /* delta_palettization_enc.c in Sources */,
 				804BE05E21356C0A00BA3395 /* enc_mips32.c in Sources */,
 				804BE04E21356C0A00BA3395 /* upsampling_neon.c in Sources */,
 				804BE08221356C0A00BA3395 /* upsampling_sse2.c in Sources */,
@@ -861,6 +863,7 @@
 				804BDFF221356BEC00BA3395 /* webp_enc.c in Sources */,
 				804BE06121356C0A00BA3395 /* ssim.c in Sources */,
 				804BE05C21356C0A00BA3395 /* rescaler_mips_dsp_r2.c in Sources */,
+				80C1D53C2135871B007974F5 /* yuv_sse41.c in Sources */,
 				804BE06921356C0A00BA3395 /* cost_mips32.c in Sources */,
 				804BDFDE21356BEC00BA3395 /* picture_psnr_enc.c in Sources */,
 				804BDFF521356BEC00BA3395 /* syntax_enc.c in Sources */,
@@ -882,6 +885,7 @@
 				804BE07521356C0A00BA3395 /* upsampling.c in Sources */,
 				804BDF8E21356BC100BA3395 /* bit_reader_utils.c in Sources */,
 				804BE09D21356C2600BA3395 /* vp8l_dec.c in Sources */,
+				80C1D53B2135871B007974F5 /* upsampling_sse41.c in Sources */,
 				804BDFA121356BC100BA3395 /* quant_levels_dec_utils.c in Sources */,
 				804BE04D21356C0A00BA3395 /* dec_mips_dsp_r2.c in Sources */,
 				804BDFDF21356BEC00BA3395 /* backward_references_enc.c in Sources */,

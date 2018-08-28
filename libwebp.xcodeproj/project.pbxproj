@@ -340,6 +340,7 @@
 		804BE09721356C2600BA3395 /* io_dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io_dec.c; sourceTree = "<group>"; };
 		80C1D52A213570EC007974F5 /* libwebpExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libwebpExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1D52C213570EC007974F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80C1D53721357BA7007974F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +365,7 @@
 		804BDDFA213568F500BA3395 = {
 			isa = PBXGroup;
 			children = (
+				80C1D53721357BA7007974F5 /* README.md */,
 				804BDE1021356AEB00BA3395 /* libwebp */,
 				804BDE06213568F500BA3395 /* Xcode */,
 				80C1D52B213570EC007974F5 /* libwebpExample */,

@@ -128,7 +128,6 @@
 		804BE07121356C0A00BA3395 /* lossless_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE02C21356C0800BA3395 /* lossless_sse2.c */; };
 		804BE07221356C0A00BA3395 /* rescaler_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE02D21356C0800BA3395 /* rescaler_sse2.c */; };
 		804BE07321356C0A00BA3395 /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE02E21356C0800BA3395 /* dec.c */; };
-		804BE07421356C0A00BA3395 /* enc_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE02F21356C0800BA3395 /* enc_avx2.c */; };
 		804BE07521356C0A00BA3395 /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE03021356C0800BA3395 /* upsampling.c */; };
 		804BE07621356C0A00BA3395 /* dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BE03121356C0800BA3395 /* dsp.h */; };
 		804BE07721356C0A00BA3395 /* lossless_enc_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = 804BE03221356C0800BA3395 /* lossless_enc_sse41.c */; };
@@ -303,7 +302,6 @@
 		804BE02C21356C0800BA3395 /* lossless_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless_sse2.c; sourceTree = "<group>"; };
 		804BE02D21356C0800BA3395 /* rescaler_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rescaler_sse2.c; sourceTree = "<group>"; };
 		804BE02E21356C0800BA3395 /* dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec.c; sourceTree = "<group>"; };
-		804BE02F21356C0800BA3395 /* enc_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_avx2.c; sourceTree = "<group>"; };
 		804BE03021356C0800BA3395 /* upsampling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upsampling.c; sourceTree = "<group>"; };
 		804BE03121356C0800BA3395 /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
 		804BE03221356C0800BA3395 /* lossless_enc_sse41.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless_enc_sse41.c; sourceTree = "<group>"; };
@@ -567,7 +565,6 @@
 				804BE02221356C0700BA3395 /* dec_sse41.c */,
 				804BE02E21356C0800BA3395 /* dec.c */,
 				804BE03121356C0800BA3395 /* dsp.h */,
-				804BE02F21356C0800BA3395 /* enc_avx2.c */,
 				804BE00B21356C0500BA3395 /* enc_mips_dsp_r2.c */,
 				804BE01921356C0600BA3395 /* enc_mips32.c */,
 				804BE03721356C0900BA3395 /* enc_msa.c */,
@@ -828,7 +825,6 @@
 				804BE06421356C0A00BA3395 /* filters_sse2.c in Sources */,
 				804BE07021356C0A00BA3395 /* yuv_mips_dsp_r2.c in Sources */,
 				804BE04F21356C0A00BA3395 /* lossless_enc.c in Sources */,
-				804BE07421356C0A00BA3395 /* enc_avx2.c in Sources */,
 				804BDFBB21356BDB00BA3395 /* muxinternal.c in Sources */,
 				804BE0A621356C2600BA3395 /* frame_dec.c in Sources */,
 				804BE06221356C0A00BA3395 /* lossless_neon.c in Sources */,

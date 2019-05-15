@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB9D228BEAFE00C85E93 /* cost_neon.c */; };
+		3258CBA0228BEB3800C85E93 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3258CB9F228BEB3800C85E93 /* quant.h */; };
 		804BDE09213568F500BA3395 /* libwebp.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDE07213568F500BA3395 /* libwebp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		804BDF8A21356BC100BA3395 /* bit_reader_inl_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDF7021356BC000BA3395 /* bit_reader_inl_utils.h */; };
 		804BDF8B21356BC100BA3395 /* bit_reader_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDF7121356BC000BA3395 /* bit_reader_utils.h */; };
@@ -179,6 +181,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3258CB9D228BEAFE00C85E93 /* cost_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cost_neon.c; sourceTree = "<group>"; };
+		3258CB9F228BEB3800C85E93 /* quant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant.h; sourceTree = "<group>"; };
 		804BDE04213568F500BA3395 /* libwebp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libwebp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		804BDE07213568F500BA3395 /* libwebp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libwebp.h; sourceTree = "<group>"; };
 		804BDE08213568F500BA3395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -553,6 +557,7 @@
 				80C1D53A2135871B007974F5 /* common_sse41.h */,
 				804BE00E21356C0500BA3395 /* cost_mips_dsp_r2.c */,
 				804BE02421356C0700BA3395 /* cost_mips32.c */,
+				3258CB9D228BEAFE00C85E93 /* cost_neon.c */,
 				804BE01421356C0600BA3395 /* cost_sse2.c */,
 				804BDFFD21356C0400BA3395 /* cost.c */,
 				804BE02521356C0700BA3395 /* cpu.c */,
@@ -594,6 +599,7 @@
 				804BDFFB21356C0400BA3395 /* mips_macro.h */,
 				804BE03921356C0900BA3395 /* msa_macro.h */,
 				804BE00521356C0500BA3395 /* neon.h */,
+				3258CB9F228BEB3800C85E93 /* quant.h */,
 				804BE01721356C0600BA3395 /* rescaler_mips_dsp_r2.c */,
 				804BE03321356C0900BA3395 /* rescaler_mips32.c */,
 				804BE02121356C0700BA3395 /* rescaler_msa.c */,
@@ -653,6 +659,7 @@
 				804BDFB821356BDB00BA3395 /* animi.h in Headers */,
 				804BE04021356C0A00BA3395 /* mips_macro.h in Headers */,
 				804BDF8B21356BC100BA3395 /* bit_reader_utils.h in Headers */,
+				3258CBA0228BEB3800C85E93 /* quant.h in Headers */,
 				804BDFB021356BCC00BA3395 /* demux.h in Headers */,
 				804BDF9D21356BC100BA3395 /* rescaler_utils.h in Headers */,
 				804BDFB121356BCC00BA3395 /* encode.h in Headers */,
@@ -826,6 +833,7 @@
 				804BE07021356C0A00BA3395 /* yuv_mips_dsp_r2.c in Sources */,
 				804BE04F21356C0A00BA3395 /* lossless_enc.c in Sources */,
 				804BDFBB21356BDB00BA3395 /* muxinternal.c in Sources */,
+				3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */,
 				804BE0A621356C2600BA3395 /* frame_dec.c in Sources */,
 				804BE06221356C0A00BA3395 /* lossless_neon.c in Sources */,
 				804BE07821356C0A00BA3395 /* rescaler_mips32.c in Sources */,

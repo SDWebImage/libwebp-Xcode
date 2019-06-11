@@ -15,48 +15,16 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.pod_target_xcconfig = {
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/**'
+  s.xcconfig = {
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
   }
+  s.preserve_path = 'src'
 
-  s.subspec 'webp' do |ss|
-    ss.header_dir = 'webp'
-    ss.source_files = 'src/webp/*.h'
-  end
+  s.source_files = 'src/webp/*.{h,c}', 'src/utils/*.{h,c}', 'src/dsp/*.{h,c}', 'src/enc/*.{h,c}', 'src/dec/*.{h,c}', 'src/demux/*.{h,c}', 'src/mux/*.{h,c}'
+  s.public_header_files = 'src/webp/*.h'
 
-  s.subspec 'core' do |ss|
-    ss.source_files = [
-      'src/utils/*.{h,c}',
-      'src/dsp/*.{h,c}',
-      'src/enc/*.{h,c}',
-      'src/dec/*.{h,c}'
-    ]
-    ss.dependency 'libwebp/webp'
-  end
-
-  s.subspec 'utils' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'dsp' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'enc' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'dec' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'demux' do |ss|
-    ss.source_files = 'src/demux/*.{h,c}'
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'mux' do |ss|
-    ss.source_files = 'src/mux/*.{h,c}'
-    ss.dependency 'libwebp/core'
-  end
+  # fix #include <inttypes.h> cause 'Include of non-modular header inside framework module error'
+  s.prepare_command = <<-CMD
+                      sed -i.bak 's/<inttypes.h>/<stdint.h>/g' './src/webp/types.h'
+                      CMD
 end

@@ -16,47 +16,33 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.pod_target_xcconfig = {
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/**'
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
   }
+  s.preserve_path = 'src'
+  s.default_subspecs = 'webp', 'demux', 'mux'
 
+  # webp decoding && encoding
   s.subspec 'webp' do |ss|
-    ss.header_dir = 'webp'
-    ss.source_files = 'src/webp/*.h'
+    ss.source_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h', 'src/utils/*.{h,c}', 'src/dsp/*.{h,c}', 'src/dec/*.{h,c}', 'src/enc/*.{h,c}'
+    ss.public_header_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h'
   end
 
-  s.subspec 'core' do |ss|
-    ss.source_files = [
-      'src/utils/*.{h,c}',
-      'src/dsp/*.{h,c}',
-      'src/enc/*.{h,c}',
-      'src/dec/*.{h,c}'
-    ]
-    ss.dependency 'libwebp/webp'
-  end
-
-  s.subspec 'utils' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'dsp' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'enc' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
-  s.subspec 'dec' do |ss|
-    ss.dependency 'libwebp/core'
-  end
-
+  # animated webp decoding
   s.subspec 'demux' do |ss|
-    ss.source_files = 'src/demux/*.{h,c}'
-    ss.dependency 'libwebp/core'
+    ss.dependency 'libwebp/webp'
+    ss.source_files = 'src/demux/*.{h,c}', 'src/webp/demux.h'
+    ss.public_header_files = 'src/webp/demux.h'
   end
 
+  # animated webp encoding
   s.subspec 'mux' do |ss|
-    ss.source_files = 'src/mux/*.{h,c}'
-    ss.dependency 'libwebp/core'
+    ss.dependency 'libwebp/demux'
+    ss.source_files = 'src/mux/*.{h,c}', 'src/webp/mux.h'
+    ss.public_header_files = 'src/webp/mux.h'
   end
+
+  # fix #include <inttypes.h> cause 'Include of non-modular header inside framework module error'
+  s.prepare_command = <<-CMD
+                      sed -i.bak 's/<inttypes.h>/<stdint.h>/g' './src/webp/types.h'
+                      CMD
 end

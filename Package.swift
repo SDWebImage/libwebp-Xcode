@@ -21,9 +21,9 @@ let package = Package(
         .target(
             name: "libwebp",
             dependencies: [],
-            path: "libwebp",
-            sources: ["src"],
-            publicHeadersPath: "src",
-            cSettings: [.headerSearchPath(".")])
+            path: ".",
+            sources: ["libwebp/src"],
+            publicHeadersPath: "include",
+            cSettings: [.headerSearchPath("libwebp")])
     ]
 )

@@ -32,7 +32,7 @@ Libwebp is available through [Swift Package Manager](https://img.shields.io/badg
 ```
 let package = Package(
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/libwebp-Xcode", from: "1.0.4")
+        .package(url: "https://github.com/SDWebImage/libwebp-Xcode", from: "1.1.0")
     ],
     // ...
 )

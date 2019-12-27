@@ -17,6 +17,14 @@ This also contains the Swift Package Manager support
 
 ## Installation
 
+#### CocoaPods
+
+libwebp is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+```ruby
+pod 'libwebp'
+```
+
 ### Carthage
 
 libwebp is (via this repo) available through [Carthage](https://github.com/Carthage/Carthage).
@@ -29,7 +37,7 @@ github "SDWebImage/libwebp-Xcode"
 
 Libwebp is available through [Swift Package Manager](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg).
 
-```
+```swift
 let package = Package(
     dependencies: [
         .package(url: "https://github.com/SDWebImage/libwebp-Xcode", from: "1.1.0")

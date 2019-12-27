@@ -13,7 +13,7 @@ notifications:
 before_install:
     - env
     - locale
-    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty --no-document --quiet
     - xcpretty --version
     - xcodebuild -version
     - xcodebuild -showsdks

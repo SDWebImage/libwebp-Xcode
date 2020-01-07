@@ -50,12 +50,15 @@ let package = Package(
 
 Use libwebp as you would normally, this is just a repo that adds an Xcode proj.
 
-For Swift Package Manager user, use the modular import instead of C headers.
+For Swift Package Manager user, it's recommended to use the modular import instead of C headers.
 
 + Objective-C
 
 ```objective-c
 @import libwebp;
+// or if you don't use module
+#import <webp/decode.h>
+#import <webp/encode.h>
 ```
 
 + Swift

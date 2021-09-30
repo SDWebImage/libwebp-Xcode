@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://developers.google.com/speed/webp/'
   s.authors          = 'Google Inc.'
   s.license          = { :type => 'BSD', :file => 'COPYING' }
-  s.source           = { :git => 'https://chromium.googlesource.com/webm/libwebp', :tag => 'v' + s.version.to_s }
+  s.source           = { :git => 'https://github.com/webmproject/libwebp.git', :tag => 'v' + s.version.to_s }
 
   s.compiler_flags = '-D_THREAD_SAFE'
   s.requires_arc = false

@@ -18,11 +18,12 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
   }
-  s.preserve_path = 'src'
-  s.default_subspecs = 'webp', 'demux', 'mux'
+  s.preserve_paths = 'src', 'sharpyuv'
+  s.default_subspecs = 'webp', 'demux', 'mux', 'sharpyuv'
 
   # webp decoding && encoding
   s.subspec 'webp' do |ss|
+    ss.dependency 'libwebp/sharpyuv'
     ss.source_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h', 'src/utils/*.{h,c}', 'src/dsp/*.{h,c}', 'src/dec/*.{h,c}', 'src/enc/*.{h,c}'
     ss.public_header_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h'
   end
@@ -39,6 +40,12 @@ Pod::Spec.new do |s|
     ss.dependency 'libwebp/demux'
     ss.source_files = 'src/mux/*.{h,c}', 'src/webp/mux.h'
     ss.public_header_files = 'src/webp/mux.h'
+  end
+
+  # sharpyuv converter
+  s.subspec 'sharpyuv' do |ss|
+    ss.source_files = 'sharpyuv/*.{h,c}'
+    ss.public_header_files = 'sharpyuv/*.h'
   end
 
   # fix #include <inttypes.h> cause 'Include of non-modular header inside framework module error'

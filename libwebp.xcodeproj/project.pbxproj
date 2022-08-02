@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3236021C2899930C00C844E7 /* sharpyuv_gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602112899930B00C844E7 /* sharpyuv_gamma.c */; };
+		3236021D2899930C00C844E7 /* sharpyuv_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602122899930B00C844E7 /* sharpyuv_sse2.c */; };
+		3236021E2899930C00C844E7 /* sharpyuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602132899930B00C844E7 /* sharpyuv.c */; };
+		3236021F2899930C00C844E7 /* sharpyuv_csp.h in Headers */ = {isa = PBXBuildFile; fileRef = 323602142899930B00C844E7 /* sharpyuv_csp.h */; };
+		323602202899930C00C844E7 /* sharpyuv_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602152899930B00C844E7 /* sharpyuv_neon.c */; };
+		323602212899930C00C844E7 /* sharpyuv_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 323602162899930B00C844E7 /* sharpyuv_dsp.h */; };
+		323602232899930C00C844E7 /* sharpyuv_gamma.h in Headers */ = {isa = PBXBuildFile; fileRef = 323602182899930B00C844E7 /* sharpyuv_gamma.h */; };
+		323602242899930C00C844E7 /* sharpyuv.h in Headers */ = {isa = PBXBuildFile; fileRef = 323602192899930B00C844E7 /* sharpyuv.h */; };
+		323602252899930C00C844E7 /* sharpyuv_csp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3236021A2899930B00C844E7 /* sharpyuv_csp.c */; };
+		323602262899930C00C844E7 /* sharpyuv_dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3236021B2899930B00C844E7 /* sharpyuv_dsp.c */; };
 		3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB9D228BEAFE00C85E93 /* cost_neon.c */; };
 		3258CBA0228BEB3800C85E93 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3258CB9F228BEB3800C85E93 /* quant.h */; };
 		804BDE09213568F500BA3395 /* libwebp.h in Headers */ = {isa = PBXBuildFile; fileRef = 804BDE07213568F500BA3395 /* libwebp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -181,6 +191,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323602112899930B00C844E7 /* sharpyuv_gamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_gamma.c; sourceTree = "<group>"; };
+		323602122899930B00C844E7 /* sharpyuv_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_sse2.c; sourceTree = "<group>"; };
+		323602132899930B00C844E7 /* sharpyuv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv.c; sourceTree = "<group>"; };
+		323602142899930B00C844E7 /* sharpyuv_csp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv_csp.h; sourceTree = "<group>"; };
+		323602152899930B00C844E7 /* sharpyuv_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_neon.c; sourceTree = "<group>"; };
+		323602162899930B00C844E7 /* sharpyuv_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv_dsp.h; sourceTree = "<group>"; };
+		323602182899930B00C844E7 /* sharpyuv_gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv_gamma.h; sourceTree = "<group>"; };
+		323602192899930B00C844E7 /* sharpyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv.h; sourceTree = "<group>"; };
+		3236021A2899930B00C844E7 /* sharpyuv_csp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_csp.c; sourceTree = "<group>"; };
+		3236021B2899930B00C844E7 /* sharpyuv_dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_dsp.c; sourceTree = "<group>"; };
 		3258CB9D228BEAFE00C85E93 /* cost_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cost_neon.c; sourceTree = "<group>"; };
 		3258CB9F228BEB3800C85E93 /* quant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant.h; sourceTree = "<group>"; };
 		804BDE04213568F500BA3395 /* libwebp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libwebp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,6 +386,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323602102899930B00C844E7 /* sharpyuv */ = {
+			isa = PBXGroup;
+			children = (
+				323602112899930B00C844E7 /* sharpyuv_gamma.c */,
+				323602122899930B00C844E7 /* sharpyuv_sse2.c */,
+				323602132899930B00C844E7 /* sharpyuv.c */,
+				323602142899930B00C844E7 /* sharpyuv_csp.h */,
+				323602152899930B00C844E7 /* sharpyuv_neon.c */,
+				323602162899930B00C844E7 /* sharpyuv_dsp.h */,
+				323602182899930B00C844E7 /* sharpyuv_gamma.h */,
+				323602192899930B00C844E7 /* sharpyuv.h */,
+				3236021A2899930B00C844E7 /* sharpyuv_csp.c */,
+				3236021B2899930B00C844E7 /* sharpyuv_dsp.c */,
+			);
+			path = sharpyuv;
+			sourceTree = "<group>";
+		};
 		804BDDFA213568F500BA3395 = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +436,7 @@
 		804BDE1021356AEB00BA3395 /* libwebp */ = {
 			isa = PBXGroup;
 			children = (
+				323602102899930B00C844E7 /* sharpyuv */,
 				804BDE1221356B2D00BA3395 /* src */,
 			);
 			path = libwebp;
@@ -650,11 +688,14 @@
 				80C1D53D2135871B007974F5 /* common_sse41.h in Headers */,
 				804BDE09213568F500BA3395 /* libwebp.h in Headers */,
 				804BDF9321356BC100BA3395 /* color_cache_utils.h in Headers */,
+				3236021F2899930C00C844E7 /* sharpyuv_csp.h in Headers */,
 				804BE0A121356C2600BA3395 /* vp8i_dec.h in Headers */,
 				804BE07F21356C0A00BA3395 /* common_sse2.h in Headers */,
 				804BDF9521356BC100BA3395 /* endian_inl_utils.h in Headers */,
 				804BDFAE21356BCC00BA3395 /* mux.h in Headers */,
+				323602212899930C00C844E7 /* sharpyuv_dsp.h in Headers */,
 				804BDFAB21356BCC00BA3395 /* types.h in Headers */,
+				323602232899930C00C844E7 /* sharpyuv_gamma.h in Headers */,
 				804BDFA221356BC100BA3395 /* utils.h in Headers */,
 				804BDFB821356BDB00BA3395 /* animi.h in Headers */,
 				804BE04021356C0A00BA3395 /* mips_macro.h in Headers */,
@@ -675,6 +716,7 @@
 				804BDFBA21356BDB00BA3395 /* muxi.h in Headers */,
 				804BDFA321356BC100BA3395 /* quant_levels_dec_utils.h in Headers */,
 				804BDFED21356BEC00BA3395 /* backward_references_enc.h in Headers */,
+				323602242899930C00C844E7 /* sharpyuv.h in Headers */,
 				804BDF9C21356BC100BA3395 /* quant_levels_utils.h in Headers */,
 				804BE04A21356C0A00BA3395 /* neon.h in Headers */,
 				804BE04721356C0A00BA3395 /* lossless.h in Headers */,
@@ -804,6 +846,7 @@
 				804BDF9E21356BC100BA3395 /* random_utils.c in Sources */,
 				804BE08721356C1B00BA3395 /* demux.c in Sources */,
 				804BE07121356C0A00BA3395 /* lossless_sse2.c in Sources */,
+				323602252899930C00C844E7 /* sharpyuv_csp.c in Sources */,
 				804BDFF021356BEC00BA3395 /* backward_references_cost_enc.c in Sources */,
 				804BDFBC21356BDB00BA3395 /* anim_encode.c in Sources */,
 				804BE05221356C0A00BA3395 /* alpha_processing_sse2.c in Sources */,
@@ -824,6 +867,7 @@
 				804BE0A421356C2600BA3395 /* quant_dec.c in Sources */,
 				804BE05621356C0A00BA3395 /* filters_neon.c in Sources */,
 				804BE07D21356C0A00BA3395 /* dec_msa.c in Sources */,
+				323602202899930C00C844E7 /* sharpyuv_neon.c in Sources */,
 				804BDF9B21356BC100BA3395 /* huffman_encode_utils.c in Sources */,
 				804BDF9721356BC100BA3395 /* utils.c in Sources */,
 				804BDF9621356BC100BA3395 /* thread_utils.c in Sources */,
@@ -836,6 +880,7 @@
 				3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */,
 				804BE0A621356C2600BA3395 /* frame_dec.c in Sources */,
 				804BE06221356C0A00BA3395 /* lossless_neon.c in Sources */,
+				3236021C2899930C00C844E7 /* sharpyuv_gamma.c in Sources */,
 				804BE07821356C0A00BA3395 /* rescaler_mips32.c in Sources */,
 				804BE04421356C0A00BA3395 /* upsampling_mips_dsp_r2.c in Sources */,
 				804BDF9221356BC100BA3395 /* huffman_utils.c in Sources */,
@@ -851,17 +896,20 @@
 				804BE04321356C0A00BA3395 /* lossless_msa.c in Sources */,
 				804BE07221356C0A00BA3395 /* rescaler_sse2.c in Sources */,
 				804BE05021356C0A00BA3395 /* enc_mips_dsp_r2.c in Sources */,
+				323602262899930C00C844E7 /* sharpyuv_dsp.c in Sources */,
 				804BE0A021356C2600BA3395 /* tree_dec.c in Sources */,
 				804BDFE121356BEC00BA3395 /* filter_enc.c in Sources */,
 				804BE04621356C0A00BA3395 /* enc_neon.c in Sources */,
 				804BE03F21356C0A00BA3395 /* lossless_enc_mips32.c in Sources */,
 				804BDF9421356BC100BA3395 /* rescaler_utils.c in Sources */,
+				3236021D2899930C00C844E7 /* sharpyuv_sse2.c in Sources */,
 				804BE05D21356C0A00BA3395 /* lossless_enc_msa.c in Sources */,
 				804BDFE321356BEC00BA3395 /* vp8l_enc.c in Sources */,
 				804BE05F21356C0A00BA3395 /* lossless_enc_sse2.c in Sources */,
 				804BE09B21356C2600BA3395 /* idec_dec.c in Sources */,
 				804BDFE521356BEC00BA3395 /* cost_enc.c in Sources */,
 				804BE07721356C0A00BA3395 /* lossless_enc_sse41.c in Sources */,
+				3236021E2899930C00C844E7 /* sharpyuv.c in Sources */,
 				804BE09E21356C2600BA3395 /* buffer_dec.c in Sources */,
 				804BE07921356C0A00BA3395 /* upsampling_msa.c in Sources */,
 				804BDFF221356BEC00BA3395 /* webp_enc.c in Sources */,

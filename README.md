@@ -67,6 +67,20 @@ For Swift Package Manager user, it's recommended to use the modular import inste
 import libwebp
 ```
 
+## About sharpyuv
+
+From libwebp v1.2.3, Google separate some function into a new standalone lib called `sharpyuv`. However, it use source code from libwebp repo's `src`
+
+For now, we only expose the sharpyuv public headers, but not a standalone CocoaPods/SPM/Carthage Target. In the future we may.
+
+If you want to use sharpyuv functions, do something like this:
+
++ Objective-C
+```
+// This does not supports module include, means no Swift support
+#import <sharpyuv/sharpyuv.h>
+```
+
 ## License
 
 libwebp is available under the BSD-3 license. See [the LICENSE file](https://github.com/webmproject/libwebp/blob/master/COPYING) for more info.

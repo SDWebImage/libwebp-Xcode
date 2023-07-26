@@ -18,11 +18,12 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
   }
-  s.preserve_paths = 'src', 'sharpyuv'
   s.default_subspecs = 'sharpyuv', 'webp', 'demux', 'mux'
+  s.preserve_path = 'src'
 
   # sharpyuv converter
   s.subspec 'sharpyuv' do |ss|
+    ss.preserve_paths = 'src', 'sharpyuv'
     ss.source_files = 'sharpyuv/*.{h,c}'
     ss.public_header_files = 'sharpyuv/sharpyuv.h'
   end

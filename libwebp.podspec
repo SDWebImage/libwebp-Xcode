@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'libwebp'
-  s.version          = '1.2.4'
+  s.version          = '1.3.0'
   s.summary          = 'Library to encode and decode images in WebP format.'
   s.homepage         = 'https://developers.google.com/speed/webp/'
   s.authors          = 'Google Inc.'
@@ -19,11 +19,18 @@ Pod::Spec.new do |s|
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
   }
   s.preserve_paths = 'src', 'sharpyuv'
-  s.default_subspecs = 'webp', 'demux', 'mux'
+  s.default_subspecs = 'sharpyuv', 'webp', 'demux', 'mux'
+
+  # sharpyuv converter
+  s.subspec 'sharpyuv' do |ss|
+    ss.source_files = 'sharpyuv/*.{h,c}'
+    ss.public_header_files = 'sharpyuv/sharpyuv.h'
+  end
 
   # webp decoding && encoding
   s.subspec 'webp' do |ss|
-    ss.source_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h', 'src/utils/*.{h,c}', 'src/dsp/*.{h,c}', 'src/dec/*.{h,c}', 'src/enc/*.{h,c}', 'sharpyuv/*.{h,c}'
+    ss.dependency 'libwebp/sharpyuv'
+    ss.source_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h', 'src/utils/*.{h,c}', 'src/dsp/*.{h,c}', 'src/dec/*.{h,c}', 'src/enc/*.{h,c}'
     ss.public_header_files = 'src/webp/decode.h', 'src/webp/encode.h', 'src/webp/types.h', 'src/webp/mux_types.h', 'src/webp/format_constants.h'
   end
 

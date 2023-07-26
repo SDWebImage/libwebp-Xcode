@@ -23,3 +23,4 @@ FOUNDATION_EXPORT const unsigned char libwebpVersionString[];
 #import <libwebp/mux.h>
 #import <libwebp/mux_types.h>
 #import <libwebp/types.h>
+#import <libwebp/sharpyuv.h>

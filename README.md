@@ -69,16 +69,33 @@ import libwebp
 
 ## About sharpyuv
 
-From libwebp v1.2.3, Google separate some function into a new standalone lib called `sharpyuv`. However, it use source code from libwebp repo's `src`
+From libwebp v1.2.3, Google separate some functions into a new standalone lib called `sharpyuv`. However, it dependeny source code from libwebp repo's `src` as implementation. Like llvm-project monorepo, one repo host multiple targets.
 
-For now, we only expose the sharpyuv public headers, but not a standalone CocoaPods/SPM/Carthage Target. In the future we may.
+Before v1.3.0, we hide these headers as internal headers.
+
+From v1.3.0, we expose the sharpyuv public headers, but not a standalone CocoaPods/SPM/Carthage Target. (In the future we may consider separate targets)
 
 If you want to use sharpyuv functions, do something like this:
 
 + Objective-C
+
 ```
-// This does not supports module include, means no Swift support
+// This does not supports module include
+#if __has_include(<sharpyuv/sharpyuv.h>)
 #import <sharpyuv/sharpyuv.h>
+#else
+#import <libwebp/sharpyuv.h> // bundled in libwebp's modulemap
+#endif
+```
+
++ Swift
+
+```swift
+#if canImport(sharpyuv)
+import sharpyuv
+#else
+import libwebp // bundled in libwebp's modulemap
+#endif
 ```
 
 ## License

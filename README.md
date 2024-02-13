@@ -11,7 +11,7 @@ This also contains the Swift Package Manager support
 ## Requirements
 
 + iOS 8
-+ macOS 10.10
++ macOS 10.11
 + tvOS 9.0
 + watchOS 2.0
 

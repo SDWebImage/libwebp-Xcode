@@ -17,6 +17,8 @@
 		323602242899930C00C844E7 /* sharpyuv.h in Headers */ = {isa = PBXBuildFile; fileRef = 323602192899930B00C844E7 /* sharpyuv.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		323602252899930C00C844E7 /* sharpyuv_csp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3236021A2899930B00C844E7 /* sharpyuv_csp.c */; };
 		323602262899930C00C844E7 /* sharpyuv_dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3236021B2899930B00C844E7 /* sharpyuv_dsp.c */; };
+		323AEC702D5738AC0046537A /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = 323AEC6F2D5738AC0046537A /* palette.c */; };
+		323AEC712D5738AC0046537A /* palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 323AEC6E2D5738AC0046537A /* palette.h */; };
 		3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB9D228BEAFE00C85E93 /* cost_neon.c */; };
 		3258CBA0228BEB3800C85E93 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3258CB9F228BEB3800C85E93 /* quant.h */; };
 		329409832A7105C700F6BA45 /* sharpyuv_cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 329409812A7105C700F6BA45 /* sharpyuv_cpu.h */; };
@@ -203,6 +205,8 @@
 		323602192899930B00C844E7 /* sharpyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv.h; sourceTree = "<group>"; };
 		3236021A2899930B00C844E7 /* sharpyuv_csp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_csp.c; sourceTree = "<group>"; };
 		3236021B2899930B00C844E7 /* sharpyuv_dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_dsp.c; sourceTree = "<group>"; };
+		323AEC6E2D5738AC0046537A /* palette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palette.h; sourceTree = "<group>"; };
+		323AEC6F2D5738AC0046537A /* palette.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = palette.c; sourceTree = "<group>"; };
 		3258CB9D228BEAFE00C85E93 /* cost_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cost_neon.c; sourceTree = "<group>"; };
 		3258CB9F228BEB3800C85E93 /* quant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant.h; sourceTree = "<group>"; };
 		329409812A7105C700F6BA45 /* sharpyuv_cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv_cpu.h; sourceTree = "<group>"; };
@@ -492,6 +496,8 @@
 				804BDF8521356BC100BA3395 /* huffman_encode_utils.h */,
 				804BDF7821356BC000BA3395 /* huffman_utils.c */,
 				804BDF7E21356BC000BA3395 /* huffman_utils.h */,
+				323AEC6E2D5738AC0046537A /* palette.h */,
+				323AEC6F2D5738AC0046537A /* palette.c */,
 				804BDF8721356BC100BA3395 /* quant_levels_dec_utils.c */,
 				804BDF8921356BC100BA3395 /* quant_levels_dec_utils.h */,
 				804BDF8021356BC000BA3395 /* quant_levels_utils.c */,
@@ -732,6 +738,7 @@
 				804BDF9021356BC100BA3395 /* filters_utils.h in Headers */,
 				804BDF9F21356BC100BA3395 /* huffman_encode_utils.h in Headers */,
 				804BDF9821356BC100BA3395 /* huffman_utils.h in Headers */,
+				323AEC712D5738AC0046537A /* palette.h in Headers */,
 				804BDFEF21356BEC00BA3395 /* vp8li_enc.h in Headers */,
 				804BDFAF21356BCC00BA3395 /* decode.h in Headers */,
 				804BE0A221356C2600BA3395 /* vp8_dec.h in Headers */,
@@ -951,6 +958,7 @@
 				804BDFEA21356BEC00BA3395 /* token_enc.c in Sources */,
 				329409842A7105C700F6BA45 /* sharpyuv_cpu.c in Sources */,
 				804BDFF921356BEC00BA3395 /* iterator_enc.c in Sources */,
+				323AEC702D5738AC0046537A /* palette.c in Sources */,
 				804BDFE921356BEC00BA3395 /* predictor_enc.c in Sources */,
 				804BE05B21356C0A00BA3395 /* lossless.c in Sources */,
 			);

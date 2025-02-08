@@ -19,6 +19,8 @@
 		323602262899930C00C844E7 /* sharpyuv_dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3236021B2899930B00C844E7 /* sharpyuv_dsp.c */; };
 		323AEC702D5738AC0046537A /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = 323AEC6F2D5738AC0046537A /* palette.c */; };
 		323AEC712D5738AC0046537A /* palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 323AEC6E2D5738AC0046537A /* palette.h */; };
+		323AEC752D573A900046537A /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 323AEC742D573A900046537A /* cpu.h */; };
+		323AEC8E2D573AD50046537A /* lossless_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = 323AEC842D573AD50046537A /* lossless_sse41.c */; };
 		3258CB9E228BEAFE00C85E93 /* cost_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB9D228BEAFE00C85E93 /* cost_neon.c */; };
 		3258CBA0228BEB3800C85E93 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3258CB9F228BEB3800C85E93 /* quant.h */; };
 		329409832A7105C700F6BA45 /* sharpyuv_cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 329409812A7105C700F6BA45 /* sharpyuv_cpu.h */; };
@@ -207,6 +209,8 @@
 		3236021B2899930B00C844E7 /* sharpyuv_dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_dsp.c; sourceTree = "<group>"; };
 		323AEC6E2D5738AC0046537A /* palette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palette.h; sourceTree = "<group>"; };
 		323AEC6F2D5738AC0046537A /* palette.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = palette.c; sourceTree = "<group>"; };
+		323AEC742D573A900046537A /* cpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		323AEC842D573AD50046537A /* lossless_sse41.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lossless_sse41.c; sourceTree = "<group>"; };
 		3258CB9D228BEAFE00C85E93 /* cost_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cost_neon.c; sourceTree = "<group>"; };
 		3258CB9F228BEB3800C85E93 /* quant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant.h; sourceTree = "<group>"; };
 		329409812A7105C700F6BA45 /* sharpyuv_cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharpyuv_cpu.h; sourceTree = "<group>"; };
@@ -610,6 +614,7 @@
 				3258CB9D228BEAFE00C85E93 /* cost_neon.c */,
 				804BE01421356C0600BA3395 /* cost_sse2.c */,
 				804BDFFD21356C0400BA3395 /* cost.c */,
+				323AEC742D573A900046537A /* cpu.h */,
 				804BE02521356C0700BA3395 /* cpu.c */,
 				804BE01521356C0600BA3395 /* dec_clip_tables.c */,
 				804BE00821356C0500BA3395 /* dec_mips_dsp_r2.c */,
@@ -644,6 +649,7 @@
 				804BDFFE21356C0400BA3395 /* lossless_msa.c */,
 				804BE01D21356C0700BA3395 /* lossless_neon.c */,
 				804BE02C21356C0800BA3395 /* lossless_sse2.c */,
+				323AEC842D573AD50046537A /* lossless_sse41.c */,
 				804BE01621356C0600BA3395 /* lossless.c */,
 				804BE00221356C0500BA3395 /* lossless.h */,
 				804BDFFB21356C0400BA3395 /* mips_macro.h */,
@@ -720,6 +726,7 @@
 				804BDFE221356BEC00BA3395 /* vp8i_enc.h in Headers */,
 				804BDF9121356BC100BA3395 /* bit_writer_utils.h in Headers */,
 				804BDFAC21356BCC00BA3395 /* format_constants.h in Headers */,
+				323AEC752D573A900046537A /* cpu.h in Headers */,
 				804BE09F21356C2600BA3395 /* vp8li_dec.h in Headers */,
 				804BDF9921356BC100BA3395 /* thread_utils.h in Headers */,
 				804BE09C21356C2600BA3395 /* alphai_dec.h in Headers */,
@@ -919,6 +926,7 @@
 				3236021D2899930C00C844E7 /* sharpyuv_sse2.c in Sources */,
 				804BE05D21356C0A00BA3395 /* lossless_enc_msa.c in Sources */,
 				804BDFE321356BEC00BA3395 /* vp8l_enc.c in Sources */,
+				323AEC8E2D573AD50046537A /* lossless_sse41.c in Sources */,
 				804BE05F21356C0A00BA3395 /* lossless_enc_sse2.c in Sources */,
 				804BE09B21356C2600BA3395 /* idec_dec.c in Sources */,
 				804BDFE521356BEC00BA3395 /* cost_enc.c in Sources */,

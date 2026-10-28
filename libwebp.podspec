@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
   s.visionos.deployment_target = '1.0'
 
   s.pod_target_xcconfig = {
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/'
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libwebp/ ${PODS_TARGET_SRCROOT}/',
+    'DEFINES_MODULE' => 'YES'
   }
   s.default_subspecs = 'sharpyuv', 'webp', 'demux', 'mux'
   s.preserve_path = 'src'
